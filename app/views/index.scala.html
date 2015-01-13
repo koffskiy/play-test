@@ -1,0 +1,29 @@
+@(appointments: List[Appointment], appForm: Form[Appointment])
+
+@main("Appointment list") {
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for(appointmnent <- appointments){
+            <tr>
+                <td>@appointmnent.name</td>
+            </tr>
+        }
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </tfoot>
+    </table>
+    <input type="button" id="create" value="create new"/>
+    <div id="appointmentModel" title="Appointment Recurrence" style="display:none;">
+        @appointmentModal(appForm)
+    </div>
+}

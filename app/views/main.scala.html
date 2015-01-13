@@ -1,0 +1,25 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jquery.datetimepicker.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jquery-ui.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/jquery.dataTables.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+
+        <script src="@routes.Assets.at("javascripts/jquery.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery-ui.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.dataTables.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.datetimepicker.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.form.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/app.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/appoinment.dialog.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        @content
+    </body>
+</html>
